@@ -17,9 +17,10 @@
      
   - name: download config file
     get_url: 
-      url: https://raw.githubusercontent.com/alagesh146/beats/master/filbeat.yml
+      url: https://raw.githubusercontent.com/alagesh146/beats/master/filebeat.yml
       dest: /etc/filebeat/
       backup: yes
+      force: yes
       
   
   - name: systemctl reload 
